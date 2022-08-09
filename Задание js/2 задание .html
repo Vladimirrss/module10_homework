@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button class="btn btn-test">Кнопка</button>
+    </div>
+    <div>
+        <p id="screen"></p>
+    </div>
+    <div>
+        <p id="coords"></p>
+    </div>
+    <script>
+        const btn = document.querySelector('.btn-test');
+const screenP = document.querySelector('#screen');
+
+
+function getScreenSize() {
+	screenP.innerText = `Ширина экрана:${window.screen.width}px Высота экрана:  ${window.screen.height}px`;
+}
+
+
+
+
+
+btn.addEventListener('click', () => {
+	getScreenSize();
+alert (`Ширина экрана:${window.screen.width}px Высота экрана:  ${window.screen.height}px`)
+});
+
+    </script>
+</body>
+</html>
